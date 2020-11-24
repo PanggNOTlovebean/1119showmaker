@@ -104,7 +104,7 @@ def main1():
         i=i+1
 
         try:
-            if(i>20 and i<25):
+            if(i>20 and i<24):
                 ax = fig.gca(projection="3d")
                 x = np.arange(0, len(df1.index))
                 y = df1[column]-0
@@ -143,7 +143,7 @@ def main1_1():
         i=i+1
 
         try:
-            if(i>20 and i<25):
+            if(i>20 and i<24):
                 ax = fig.gca(projection="3d")
                 x = np.arange(0, len(df1.index))
                 y = df1[column]-0
@@ -264,17 +264,16 @@ if __name__ == "__main__":
     plt.rcParams["font.sans-serif"] = ["SimHei"]
     plt.rcParams["axes.unicode_minus"] = False
     # 创业板所有股票 
-    # main0()
+    main0()
     # 创业板少数股票 
-    # main1()
+    main1()
     # 创业板所有股票 概率 
-    # main0_1()
+    main0_1()
     # 创业板少数股票 概率 
-    # main1_1()
+    main1_1()
     
     # main2()
     main3('2020-01-06')
     main3('2020-01-07')
     main3('2020-01-08')
-    main3('2020-01-09')
 
